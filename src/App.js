@@ -1,26 +1,31 @@
+// Importing Required Files And Package Here.
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router , Switch ,Route} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import SinglePostPage from "./pages/SinglepostPage";
+import CreatePostPage from "./pages/CreatePostPage";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+         <h1>Welcome To MERN STACK PROJECT</h1>
       </header>
+      <Router>
+         <Navigation />
+         <Switch>
+           <Route exact path="/" component={HomePage} />
+           <Route exact path="/post/:id" component={SinglePostPage} />
+           <Route exact path="/create" component={CreatePostPage} />
+
+         </Switch>
+      </Router>
+
     </div>
-  );
+  )
+  
 }
 
 export default App;
