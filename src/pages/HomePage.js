@@ -16,7 +16,7 @@ const HomePage = (props) => {
   }, []);
   return (
     <div>
-      <h2>Posts</h2>
+      <h2 className="text-center text-primary">Posts</h2>
       {posts.map((post, idx) => {
         return <Post post={post} key={post._id} />;
       })}

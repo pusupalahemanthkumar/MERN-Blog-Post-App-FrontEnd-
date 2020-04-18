@@ -16,11 +16,10 @@ const SinglePostPage = (props) => {
       });
   }, [postId]);
   return (
-    <div>
-      <h2>Post</h2>
-      <h3>{post.title}</h3>
+    <div className="Post">
+      <h3 className="text-center">{post.title}</h3>
       <p>{post.body}</p>
-      <p>{post.author}</p>
+      <p><span className="text-primary">Author : </span> {post.author}</p>
     </div>
   );
 };

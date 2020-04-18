@@ -24,11 +24,11 @@ const CreatePost = (props) => {
       });
   };
   return (
-    <div>
-      <div>
-        <h1>Create Post Page</h1>
-        <form onSubmit={formSubmitHandler}>
-          <div>
+    // <div>
+      <div className="container">
+        <h1 className="text-center">Create Post Page</h1>
+        <form onSubmit={formSubmitHandler } className="form">
+          <div className="form-group">
             <label>Title</label>
             <input
               type="text"
@@ -38,7 +38,7 @@ const CreatePost = (props) => {
               }}
             />
           </div>
-          <div>
+          <div className="form-group">
             <label>Body</label>
             <input
               type="text"
@@ -48,7 +48,7 @@ const CreatePost = (props) => {
               }}
             />
           </div>
-          <div>
+          <div className="form-group">
             <label>Author</label>
             <input
               type="text"
@@ -58,10 +58,10 @@ const CreatePost = (props) => {
               }}
             />
           </div>
-          <button type="submit">Upload</button>
+          <button type="submit" className="btn">Upload</button>
         </form>
       </div>
-    </div>
+    // </div>
   );
 };
 
