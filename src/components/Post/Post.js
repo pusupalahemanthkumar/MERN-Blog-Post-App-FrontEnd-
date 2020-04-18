@@ -1,7 +1,9 @@
+// Importing Required Files And Packages Here.
 import React from "react";
 import "./Post.css";
 import { Link } from "react-router-dom";
 
+// Defining Post Component Here.
 const Post = (props) => {
   return (
     <div className="Post">

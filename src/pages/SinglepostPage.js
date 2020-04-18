@@ -1,6 +1,8 @@
+// Importing Required Files And Packages Here.
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import Post from "../components/Post/Post";
+
+// Defining SinglePostPage Component Here.
 const SinglePostPage = (props) => {
   const [post, setpost] = useState({});
   const postId = props.match.params.id;

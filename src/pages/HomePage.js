@@ -1,6 +1,9 @@
+// Importing Required Files And Packages Here.
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Post from "../components/Post/Post";
+
+// Defining HomePage Component Here.
 const HomePage = (props) => {
   const [posts, setposts] = useState([]);
   useEffect(() => {

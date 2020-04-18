@@ -1,7 +1,9 @@
+// Importing Required Files And Packages Here.
 import React from "react";
 import "./Navigation.css"
 import { Link } from "react-router-dom";
 
+// Defining Navigation Component Here.
 const Navigation = () => {
   return (
     <div className="navbar-container">

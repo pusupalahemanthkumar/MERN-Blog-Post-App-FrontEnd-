@@ -7,12 +7,13 @@ import SinglePostPage from "./pages/SinglepostPage";
 import CreatePostPage from "./pages/CreatePostPage";
 import Navigation from "./components/Navigation/Navigation";
 
+// Defining App Component Here.
 function App() {
   return (
     <div className="App">
       <header>
         <div className="header-content">
-          <h1><span className="text-primary">MERN</span> STACK PROJECT</h1>
+          <h1><span className="text-primary">MERN</span> Stack Project</h1>
         </div>
       </header>
       <Router>

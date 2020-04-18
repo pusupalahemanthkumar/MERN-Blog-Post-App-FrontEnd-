@@ -1,6 +1,8 @@
+// Importing Required Files And Packages Here.
 import React, { useState } from "react";
 import axios from "axios";
 
+// Defining CreatePost Component Here.
 const CreatePost = (props) => {
   const [formData, setFormData] = useState({
     title: "",
@@ -24,44 +26,44 @@ const CreatePost = (props) => {
       });
   };
   return (
-    // <div>
-      <div className="container">
-        <h1 className="text-center">Create Post Page</h1>
-        <form onSubmit={formSubmitHandler } className="form">
-          <div className="form-group">
-            <label>Title</label>
-            <input
-              type="text"
-              value={formData.title}
-              onChange={(e) => {
-                setFormData({ ...formData, title: e.target.value });
-              }}
-            />
-          </div>
-          <div className="form-group">
-            <label>Body</label>
-            <input
-              type="text"
-              value={formData.body}
-              onChange={(e) => {
-                setFormData({ ...formData, body: e.target.value });
-              }}
-            />
-          </div>
-          <div className="form-group">
-            <label>Author</label>
-            <input
-              type="text"
-              value={formData.author}
-              onChange={(e) => {
-                setFormData({ ...formData, author: e.target.value });
-              }}
-            />
-          </div>
-          <button type="submit" className="btn">Upload</button>
-        </form>
-      </div>
-    // </div>
+    <div className="container">
+      <h1 className="text-center">Create Post Page</h1>
+      <form onSubmit={formSubmitHandler} className="form">
+        <div className="form-group">
+          <label>Title</label>
+          <input
+            type="text"
+            value={formData.title}
+            onChange={(e) => {
+              setFormData({ ...formData, title: e.target.value });
+            }}
+          />
+        </div>
+        <div className="form-group">
+          <label>Body</label>
+          <input
+            type="text"
+            value={formData.body}
+            onChange={(e) => {
+              setFormData({ ...formData, body: e.target.value });
+            }}
+          />
+        </div>
+        <div className="form-group">
+          <label>Author</label>
+          <input
+            type="text"
+            value={formData.author}
+            onChange={(e) => {
+              setFormData({ ...formData, author: e.target.value });
+            }}
+          />
+        </div>
+        <button type="submit" className="btn">
+          Upload
+        </button>
+      </form>
+    </div>
   );
 };
 
